@@ -1,5 +1,5 @@
 ---
-layout: index.njk
+layout: main.njk
 ---
 
 <section class="text">

@@ -1,15 +1,11 @@
 const markdown = require('markdown-it')({ html: true })
 
 module.exports = function (config) {
+	config.addPassthroughCopy('src/styles')
+	config.addPassthroughCopy('src/fonts')
+
 	config.addPairedShortcode('markdown', (content) => {
 		return markdown.render(content)
-	})
-
-	config.addCollection('myCollect', function (collection) {
-		return collection.getAll().filter((item) => {
-			console.log(item)
-			return item.data.tags?.includes('post') && item.data.title.includes('1')
-		})
 	})
 
 	return {
