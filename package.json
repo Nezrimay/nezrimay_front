@@ -4,7 +4,7 @@
   "description": "Фронтовая часть проекта незримая надстройка",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx eleventy --serve"
   },
   "repository": {
     "type": "git",

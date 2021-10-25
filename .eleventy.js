@@ -5,6 +5,13 @@ module.exports = function (config) {
 		return markdown.render(content)
 	})
 
+	config.addCollection('myCollect', function (collection) {
+		return collection.getAll().filter((item) => {
+			console.log(item)
+			return item.data.tags?.includes('post') && item.data.title.includes('1')
+		})
+	})
+
 	return {
 		dir: {
 			input: 'src',
