@@ -1,0 +1,24 @@
+<header class="page__header header">
+  <div class="header__search search">
+    <input class="search__input" type="text" aria-label="Поиск внутри сайта" />
+  <div>
+
+  <a class="header__logo" {% if page.url !="/" %} href="/" {% endif %}>
+    Незримая Надстройка
+  </a>
+  
+  <button class="header__menu menu" aria-label="Кнопка для раскрытия меню">
+    <div class="menu__line line-1"></div>
+    <div class="menu__line line-2"></div>
+  </button>
+
+  <nav class="header__navigation navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item">Главная</li>
+      <li class="navigation__item">Текста</li>
+      <li class="navigation__item">Товары</li>
+      <li class="navigation__item">Авторы</li>
+      <li class="navigation__item">О нас</li>
+    </ul>
+  </nav>
+</header>
