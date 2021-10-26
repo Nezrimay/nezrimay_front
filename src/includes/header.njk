@@ -1,15 +1,17 @@
 <header class="page__header header">
   <div class="header__search search">
-    <input class="search__input" type="text" aria-label="Поиск внутри сайта" />
-  <div>
+    <input
+					class="search__input"
+					type="text"
+					aria-label="Поиск внутри сайта"
+				/>
+  </div>
 
-  <a class="header__logo" {% if page.url !="/" %} href="/" {% endif %}>
-    Незримая Надстройка
-  </a>
-  
+  <a class="header__logo"> Незримая Надстройка </a>
+
   <button class="header__menu menu" aria-label="Кнопка для раскрытия меню">
-    <div class="menu__line line-1"></div>
-    <div class="menu__line line-2"></div>
+    <span class="menu__line line-1"></span>
+    <span class="menu__line line-2"></span>
   </button>
 
   <nav class="header__navigation navigation">
