@@ -1,7 +1,7 @@
 const markdown = require('markdown-it')({ html: true })
 
 module.exports = function (config) {
-	config.addPassthroughCopy('src/styles')
+	// config.addPassthroughCopy('src/styles')
 	config.addPassthroughCopy('src/fonts')
 	config.addPassthroughCopy('src/images')
 
