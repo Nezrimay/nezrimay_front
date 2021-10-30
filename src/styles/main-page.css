@@ -32,8 +32,8 @@
 .pages {
 	position: relative;
 	&__wrapper-img {
-		/* width: 31.25rem;
-		height: 31.25rem; */
+		min-width: 31.25rem;
+		min-height: 31.25rem;
 	}
 
 	&__img {
@@ -76,8 +76,8 @@
 	padding: 6rem 2rem 9rem;
 	margin-left: -2rem;
 
-	background-color: var(--main-color);
-	color: #ffffff;
+	background-color: var(--primary-color);
+	color: var(--white-color);
 
 	&__title {
 		font-style: normal;
