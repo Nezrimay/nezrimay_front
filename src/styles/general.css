@@ -1,0 +1,70 @@
+:root {
+	--primary-color: #171717;
+	--secondary-color: #666666;
+	--white-color: #FFFFFF;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: min(calc(100vw / 40), 16px);
+	font-family: 'Neue Machina', arial, helvetica, sans-serif;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.grotesk {
+	font-style: normal;
+	font-weight: normal;
+	line-height: 115%;
+	color: var(--primary-color);
+
+	&_secondary {
+		color: var(--secondary-color);
+	}
+
+	&-h1 {
+		font-size: 3.5rem;
+	}
+
+	&-h2 {
+		font-size: 2.75rem;
+		font-weight: bold;
+		line-height: 80%;
+		letter-spacing: -0.02em;
+	}
+
+	&-nav {
+		font-weight: 300;
+		font-size: 2.25rem;
+	}
+
+	&-b1 {
+		font-size: 2rem;
+	}
+
+	&-b2 {
+		font-size: 1.75rem;
+		line-height: 105%;
+	}
+}

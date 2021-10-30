@@ -1,32 +1,35 @@
 {
-  "name": "nezrimay",
-  "version": "1.0.0",
-  "description": "Фронтовая часть проекта незримая надстройка",
-  "main": "index.js",
-  "scripts": {
-    "start": "npx eleventy --serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nezrimay/nezrimay_front.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nezrimay/nezrimay_front/issues"
-  },
-  "homepage": "https://github.com/Nezrimay/nezrimay_front#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "gulp": "^4.0.2",
-    "postcss": "^8.3.11"
-  },
-  "dependencies": {
-    "gulp-postcss": "^9.0.1",
-    "gulp-replace": "^1.1.3",
-    "postcss-csso": "^5.0.1",
-    "postcss-nested": "^5.0.6",
-    "postcss-preset-env": "^6.7.0"
-  }
+	"name": "nezrimay",
+	"version": "1.0.0",
+	"description": "Фронтовая часть проекта незримая надстройка",
+	"main": "index.js",
+	"scripts": {
+		"postcss": "postcss ./src/styles/*.css --dir ./dist/styles/ --watch",
+		"start": "npx eleventy --serve"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Nezrimay/nezrimay_front.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Nezrimay/nezrimay_front/issues"
+	},
+	"homepage": "https://github.com/Nezrimay/nezrimay_front#readme",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.12.1",
+		"gulp": "^4.0.2",
+		"postcss": "^8.3.11"
+	},
+	"dependencies": {
+		"gulp-postcss": "^9.0.1",
+		"gulp-replace": "^1.1.3",
+		"postcss-cli": "^9.0.1",
+		"postcss-csso": "^5.0.1",
+		"postcss-import": "^14.0.2",
+		"postcss-nested": "^5.0.6",
+		"postcss-preset-env": "^6.7.0"
+	}
 }

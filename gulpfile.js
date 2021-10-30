@@ -10,7 +10,7 @@ const replace = require('gulp-replace')
 gulp.task('styles:compress', () => {
 	return gulp
 		.src('src/styles/styles.css')
-		.pipe(postcss([require('postcss-import'), require('postcss-csso')]))
+		.pipe(postcss())
 		.pipe(gulp.dest('dist'))
 })
 
@@ -68,7 +68,7 @@ gulp.task(
 	gulp.series(
 		'styles:compress',
 		// 'styles:inline',
-		'scripts:compress',
+		'scripts:compress'
 		// 'scripts:inline',
 		// 'clean'
 	)
