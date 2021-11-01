@@ -8,16 +8,24 @@ document.addEventListener('DOMContentLoaded', () => {
       if (inputSearch.classList.contains('search__input_open')) {
         inputSearch.classList.remove('search__input_open');
       }
+      btn.ariaExpanded = 'false';
       header.classList.remove('header_open');
+      btn.ariaLabel = 'Открыть меню';
     } else {
       header.classList.add('header_open');
+      btn.ariaLabel = 'Закрыть меню';
+      btn.ariaExpanded = 'true';
     }
   });
   btnSearch.addEventListener('click', () => {
     if (inputSearch.classList.contains('search__input_open')) {
       inputSearch.classList.remove('search__input_open');
+      btnSearch.ariaLabel = 'Открыть поиск';
+      btnSearch.ariaExpanded = 'false';
     } else {
       inputSearch.classList.add('search__input_open');
+      btnSearch.ariaLabel = 'Закрыть поиск';
+      btnSearch.ariaExpanded = 'true';
     }
   });
 });
