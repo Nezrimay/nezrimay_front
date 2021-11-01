@@ -2,7 +2,7 @@
   padding: var(--x4) var(--x2) var(--x4);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
+  column-gap: 2.5rem;
   row-gap: var(--x4);
 }
 
@@ -20,8 +20,8 @@
   a {
     color: var(--primary-color);
     font-weight: 300;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 2.5rem;
+    line-height: 115%;
   }
 }
 
@@ -29,30 +29,29 @@
   &__item {
     color: var(--secondary-color);
     font-weight: 200;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 2.25rem;
+    line-height: 115%;
   }
 
   li {
     color: var(--secondary-color);
-    font-style: normal;
     font-weight: 200;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 2.25rem;
+    line-height: 115%;
   }
 }
 
 .social-list {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2.5rem;
 }
 
 .design-link {
   color: var(--secondary-color);
   font-weight: 200;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 2.25rem;
+  line-height: 150%;
   
   &__item {
     color: var(--primary-color);
