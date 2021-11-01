@@ -4,13 +4,13 @@
 	--white-color: #FFFFFF;
 	--primary-font: 'Neue Machina', arial, helvetica, sans-serif;
 	--secondary-font: 'Wremena', arial, helvetica, sans-serif;
-	--1x: 1rem;
-	--2x: 2rem;
-	--3x: 3rem;
-	--4x: 4rem;
-	--5x: 5rem;
-	--6x: 6rem;
-	--7x: 7rem;
+	--x1: 1rem;
+	--x2: 2rem;
+	--x3: 3rem;
+	--x4: 4rem;
+	--x5: 5rem;
+	--x6: 6rem;
+	--x7: 7rem;
 }
 
 *,

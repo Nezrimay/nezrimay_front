@@ -1,9 +1,9 @@
 .footer {
-  padding: var(--4x) var(--2x) var(--4x);
+  padding: var(--x4) var(--x2) var(--x4);
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
-  row-gap: var(--4x);
+  row-gap: var(--x4);
 }
 
 .footer-links {
@@ -12,7 +12,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-bottom: var(--2x);
+    margin-bottom: var(--x2);
   }
 }
 
