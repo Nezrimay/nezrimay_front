@@ -2,6 +2,15 @@
 	--primary-color: #171717;
 	--secondary-color: #666666;
 	--white-color: #FFFFFF;
+	--primary-font: 'Neue Machina', arial, helvetica, sans-serif;
+	--secondary-font: 'Wremena', arial, helvetica, sans-serif;
+	--x1: 1rem;
+	--x2: 2rem;
+	--x3: 3rem;
+	--x4: 4rem;
+	--x5: 5rem;
+	--x6: 6rem;
+	--x7: 7rem;
 }
 
 *,
@@ -14,12 +23,16 @@
 
 html {
 	font-size: min(calc(100vw / 40), 16px);
-	font-family: 'Neue Machina', arial, helvetica, sans-serif;
+	font-family: var(--primary-font);
 }
 
 body {
 	padding: 0;
 	margin: 0;
+}
+
+li, ul {
+	list-style-type: none;
 }
 
 .visually-hidden {
