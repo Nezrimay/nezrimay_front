@@ -36,6 +36,10 @@
     .navigation {
       display: block;
     }
+
+    .menu-btn {
+      margin-left: 0.9rem;
+    }
   }
 }
 
