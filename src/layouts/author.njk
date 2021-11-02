@@ -1,0 +1,64 @@
+---
+layout: page.njk
+---
+
+{% include 'header.njk' %}
+
+<main class="author articles">
+	<ul class="articles__tags-list">
+		{% for tag in pageTags %}
+		<li class="articles__tags-item">
+			<a href="{{ tag.link }}" class="articles__tags-link grotesk grotesk-b2">
+				{{ tag.name }}
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
+
+	<div class="author__info">
+		<h1 class="author__name grotesk grotesk-h1">{{ title }}</h1>
+		<p class="author__city grotesk grotesk-b2 grotesk_secondary">{{ city }}</p>
+		<p class="author__discription grotesk grotesk-b1">{{ discription }}</p>
+
+		<ul class="author__social-list">
+			{% for item in socialList %}
+			<li class="author__social-item">
+				<a
+					href="{{ item.url }}"
+					target="_blank"
+					class="author__social-link grotesk grotesk-nav grotesk_secondary"
+					>{{ item.text }}</a
+				>
+			</li>
+			{% endfor %}
+		</ul>
+
+		<div class="author__works works">
+			<p class="works__text grotesk grotesk-b2 grotesk_secondary">Работы</p>
+			<ul class="works__list">
+				{% for work in workList%}
+				<li class="works__item">
+					<a href="{{ work.url }}" target="_blank" class="work">
+						<img
+							class="work__img"
+							src="{{ work.img }}"
+							alt="Работа автора - {{ title }}, название работы: {{
+								work.text
+							}}"
+							width="250"
+							height="250"
+						/>
+						<p class="work__title grotesk grotesk-nav">{{ work.text }}</p>
+					</a>
+				</li>
+				{%endfor%}
+			</ul>
+		</div>
+	</div>
+
+	<div class="author__content">
+		{{ content | safe }}
+	</div>
+</main>
+
+{% include 'footer.njk' %}

@@ -1,0 +1,62 @@
+.author {
+	&__info {
+		padding: 9rem 0;
+	}
+
+	&__city {
+		margin-top: 1rem;
+	}
+
+	&__description {
+		margin-top: 3rem;
+	}
+
+	&__social-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 3rem;
+		list-style: none;
+	}
+
+	&__social-item:not(:last-child) {
+		margin-right: 7.75rem;
+	}
+
+	&__social-link {
+		text-decoration: none;
+	}
+}
+
+.works {
+	margin-top: 6rem;
+
+	&__text {
+		text-align: end;
+	}
+
+	&__list {
+		display: flex;
+		margin-top: 2rem;
+
+		list-style: none;
+
+		overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 3rem;
+	}
+}
+
+.work {
+  text-decoration: none;
+
+	&__title {
+		margin-top: 2rem;
+		text-decoration: none;
+	}
+}

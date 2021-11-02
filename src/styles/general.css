@@ -1,7 +1,7 @@
 :root {
 	--primary-color: #171717;
 	--secondary-color: #666666;
-	--white-color: #FFFFFF;
+	--white-color: #ffffff;
 }
 
 *,
@@ -66,5 +66,36 @@ body {
 	&-b2 {
 		font-size: 1.75rem;
 		line-height: 105%;
+	}
+}
+
+.wremena {
+	font-family: 'Wremena';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 80%;
+
+	&_secondary {
+		color: var(--secondary-color);
+	}
+
+	&-h1 {
+		font-weight: bold;
+		font-size: 3.5rem;
+	}
+
+	&-h2 {
+		font-size: 2.75rem;
+		font-weight: bold;
+	}
+
+	&-b1 {
+		font-size: 2rem;
+		line-height: 135%;
+	}
+
+	&-b2 {
+		font-size: 1.75rem;
+		line-height: 100%;
 	}
 }
