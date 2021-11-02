@@ -1,0 +1,122 @@
+.articles {
+	padding: 2rem;
+	padding-bottom: 9rem;
+
+	&__tags-list {
+		display: flex;
+		list-style: none;
+	}
+
+	&__tags-item:not(:last-child) {
+		margin-right: 1.25rem;
+	}
+
+	&__tags-link {
+		display: block;
+		padding: 0.75rem 1rem 0.5rem;
+		background-color: var(--primary-color);
+		color: var(--white-color);
+		line-height: 75.5%;
+
+		border-radius: 0.625rem;
+
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	&__header-wrapper {
+		margin-top: 9rem;
+	}
+
+	&__content {
+		& p {
+			font-family: 'Wremena';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 135%;
+			color: var(--primary-color);
+
+			&:not(:last-child) {
+				margin-bottom: 4rem;
+			}
+		}
+
+		& h2 {
+			margin-top: 6rem;
+			margin-bottom: 3rem;
+
+			font-family: 'Wremena';
+			font-style: normal;
+			font-weight: bold;
+			font-size: 2.75rem;
+			line-height: 80%;
+			color: var(--primary-color);
+		}
+
+		& .poem p:not(:last-child),
+		.interview p:not(:last-child) {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.poem {
+	display: flex;
+	flex-direction: column;
+
+	& div {
+		width: 16.75rem;
+		align-self: flex-end;
+
+		&:nth-child(2n) {
+			color: red;
+			text-align: end;
+			align-self: flex-start;
+		}
+	}
+}
+
+.interview {
+  margin-top: 6rem;
+
+	& p bold {
+		font-weight: bold;
+	}
+}
+
+.articles-header {
+	&__date {
+		margin-bottom: 2rem;
+	}
+
+	&__title {
+		margin-bottom: 1rem;
+	}
+
+	&__subtitle {
+		margin-bottom: 2rem;
+	}
+
+	&__wrapper-img {
+		margin: 4rem 0;
+	}
+
+	&__img {
+		width: calc(100% + 4rem);
+		margin-left: -2rem;
+	}
+
+	&__alt-img {
+		margin-top: 2rem;
+	}
+}
+
+.article-title p {
+	font-family: 'Neue Machina';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2rem;
+	line-height: 115%;
+	color: var(--primary-color);
+}
