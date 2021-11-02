@@ -11,7 +11,6 @@
   ]
   tags: ['poetry', 'id-author']
   dates: '01.02.2021'
-  srcimage: 'name'
   title: 'Перестал и смеётся'
   author: 'Иван Овчиников'
   picture: 

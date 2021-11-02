@@ -11,7 +11,6 @@
   ]
   tags: ['interview', 'id-author']
   dates: '01.02.2021'
-  srcimage: 'name'
   title: 'Перестал и смеётся'
   subtitle: 'Беседа с основателем Canary Records'
   author: 'Иван Овчиников'

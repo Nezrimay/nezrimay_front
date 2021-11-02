@@ -33,7 +33,6 @@
 	position: relative;
 	&__wrapper-img {
 		min-width: 31.25rem;
-		min-height: 31.25rem;
 	}
 
 	&__img {
