@@ -1,5 +1,7 @@
 @import 'fonts.css';
 @import 'general.css';
+@import 'header.css';
+@import 'footer.css';
 @import 'main-page.css';
 @import 'articles.css';
 @import 'author.css';

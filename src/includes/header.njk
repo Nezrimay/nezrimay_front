@@ -1,26 +1,53 @@
 <header class="page__header header">
-  <div class="header__search search">
-    <input
-					class="search__input"
-					type="text"
-					aria-label="Поиск внутри сайта"
-				/>
-  </div>
+	<div class="header__wrapper">
+		<a
+			class="header__logo"
+			href="/"
+			aria-label="Ссылка на главную страницу"
+			title="На главную"
+		>
+			<img src="/images/logo.svg" alt="Логотип Незримая Надстройка" width="93" height="26" />
+		</a>
 
-  <a class="header__logo"> Незримая Надстройка </a>
+		<div class="header__search search">
+			<button class="search__button" aria-label="Открыть поиск">
+				<img class="search__image" src="/images/search.svg" aria-hidden="true"/>
+			</button>
+			<input
+				class="search__input"
+				type="text"
+				aria-label="Поиск внутри сайта"
+				aria-expanded="false"
+			/>
+		</div>
 
-  <button class="header__menu menu" aria-label="Кнопка для раскрытия меню">
-    <span class="menu__line line-1"></span>
-    <span class="menu__line line-2"></span>
-  </button>
+		<button
+			class="header__menu menu-btn menu-btn_open"
+			aria-label="Открыть меню"
+			aria-expanded="false"
+		>
+			<span class="menu-btn__line line-1"></span>
+			<span class="menu-btn__line line-2"></span>
+		</button>
+	</div>
 
-  <nav class="header__navigation navigation">
-    <ul class="navigation__list">
-      <li class="navigation__item">Главная</li>
-      <li class="navigation__item">Текста</li>
-      <li class="navigation__item">Товары</li>
-      <li class="navigation__item">Авторы</li>
-      <li class="navigation__item">О нас</li>
-    </ul>
-  </nav>
+	<nav class="header__navigation navigation">
+		<ul class="navigation__list">
+			<li class="navigation__item">
+				<a class="navigation__link" href="#">Главная</a>
+			</li>
+			<li class="navigation__item">
+				<a class="navigation__link" href="#">Текста</a>
+			</li>
+			<li class="navigation__item">
+				<a class="navigation__link" href="#">Товары</a>
+			</li>
+			<li class="navigation__item">
+				<a class="navigation__link" href="#">Авторы</a>
+			</li>
+			<li class="navigation__item">
+				<a class="navigation__link" href="#">О нас</a>
+			</li>
+		</ul>
+	</nav>
 </header>
