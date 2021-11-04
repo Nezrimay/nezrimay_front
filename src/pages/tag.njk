@@ -1,0 +1,46 @@
+---
+pagination:
+  data: constant['listTag']
+  size: 1
+  alias: tag
+layout: page.njk
+permalink: /tag/{{tag | slug}}/
+---
+
+{% include 'header.njk' %}
+
+<main class="tag-page">
+	<h1 class="last-pages__title grotesk grotesk-h1">
+		{{ constant['all-' + tag] }}
+	</h1>
+	{% if collections[tag] | length %}
+	<ul class="last-pages__list">
+		{%for art in collections[tag]%}
+		<li class="last-pages__item">
+			<a>
+				<div class="pages">
+					<div class="pages__tags">{{ constant[tag] }}</div>
+					<div class="pages__wrapper-img">
+						<img
+							class="pages__img pages__img_full"
+							width="100%"
+							src="{{ art.url }}{{ art.data.picture.src }}"
+						/>
+					</div>
+					<p class="pages__title grotesk grotesk-nav">{{ art.data.title }}</p>
+					<p class="pages__date grotesk grotesk_secondary grotesk-b2">
+						{{ art.date | transformDate }}
+					</p>
+				</div>
+			</a>
+		</li>
+		{%endfor%}
+	</ul>
+	{%else %}
+	<p class="grotesk grotesk-h2">
+		К сожалению в данный момент нет статей на данную тему
+	</p>
+	{% endif%}
+</main>
+
+{% include 'footer.njk' %}

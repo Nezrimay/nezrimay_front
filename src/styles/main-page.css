@@ -3,23 +3,49 @@
 }
 
 .best-pages {
-	margin-bottom: 3rem;
+	margin-bottom: 6rem;
 
 	&__list {
 		display: flex;
 		column-gap: 3rem;
 		align-items: center;
 
+		width: calc(100% + 4rem);
+		margin-left: -2rem;
+		padding-left: 2rem;
+
 		margin-top: 4rem;
-		padding-bottom: 3rem;
 
 		list-style: none;
 		overflow: auto;
+
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+		}
+	}
+
+	&__link-wraper {
+		margin-top: 3rem;
+
+		background-image: url('/images/arrow.svg');
+		background-position: 100%;
+		background-repeat: no-repeat;
+		background-size: 6.25rem 2.5rem;
+	}
+
+	&__link {
+		color: var(--primary-color);
+		text-decoration: none;
 	}
 }
 
 .last-pages {
 	margin-bottom: 9rem;
+	&__title {
+		margin-bottom: 3rem;
+	}
+
 	&__list {
 		list-style: none;
 	}

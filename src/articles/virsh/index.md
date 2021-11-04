@@ -10,11 +10,12 @@
     }
   ]
   tags: ['poetry', 'id-author']
+  date: 2019-08-11
   dates: '01.02.2021'
   title: 'Перестал и смеётся'
   author: 'Иван Овчиников'
   picture: 
-    src: './foto.jpg'
+    src: 'foto.jpg'
     name: 'Важность'
     author: 'Красавчик классный'
     alt: 'Абстрактное изображение'

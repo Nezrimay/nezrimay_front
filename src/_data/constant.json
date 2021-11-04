@@ -1,0 +1,11 @@
+{
+	"poetry": "Поэзия",
+	"prose": "Проза",
+	"theory": "Теория",
+	"interview": "Интервью",
+	"listTag": ["poetry", "prose", "theory", "interview"],
+	"all-poetry": "Вся поэзия",
+	"all-prose": "Вся проза",
+	"all-theory": "Вся теория",
+	"all-interview": "Все интервью"
+}
