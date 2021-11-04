@@ -17,7 +17,7 @@ permalink: /tag/{{tag | slug}}/
 	<ul class="last-pages__list">
 		{%for art in collections[tag]%}
 		<li class="last-pages__item">
-			<a>
+			<a href="{{ art.url }}">
 				<div class="pages">
 					<div class="pages__tags">{{ constant[tag] }}</div>
 					<div class="pages__wrapper-img">

@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-permalink: /tags/
+permalink: /authors/
 title: 'Текста'
 ---
 
@@ -8,15 +8,19 @@ title: 'Текста'
 
 <main class="tag-page tag-page_not-padding">
 	<h1 class="visually-hidden">Текста</h1>
-	{% for tag in constant['listTag'] %} {% if collections[tag] | length %}
+	{% for author in collections.author %}
 	<section class="tag-page__section">
-		<h2 class="best-pages__title grotesk grotesk-h1">{{ constant[tag] }}</h2>
+		<h2 class="best-pages__title grotesk grotesk-h1">
+			{{ author.data.title }}
+		</h2>
+		<p class="best-pages__city grotesk grotesk-b2 grotesk_secondary">
+			{{ author.data.city }}
+		</p>
 		<ul class="best-pages__list">
-			{%for art in collections[tag]%}
+			{%for art in collections[author.data.id] | getText%}
 			<li class="best-pages__item">
 				<a href="{{ art.url }}">
 					<div class="pages">
-						<div class="pages__tags">{{ constant[tag] }}</div>
 						<div class="pages__wrapper-img">
 							<img
 								class="pages__img"
@@ -27,21 +31,18 @@ title: 'Текста'
 						<p class="pages__title grotesk grotesk-nav">
 							{{ art.data.title }}
 						</p>
-						<p class="pages__date grotesk grotesk_secondary grotesk-b2">
-							{{ art.date | transformDate }}
-						</p>
 					</div>
 				</a>
 			</li>
 			{%endfor%}
 		</ul>
 		<div class="best-pages__link-wraper">
-			<a href="/tag/{{ tag }}" class="best-pages__link grotesk grotesk-b1">
-				{{ constant['all-' + tag] }}
+			<a href="{{ author.url }}" class="best-pages__link grotesk grotesk-b1">
+				Об авторе
 			</a>
 		</div>
 	</section>
-	{% endif%} {% endfor %}
+	{% endfor %}
 </main>
 
 {% include 'footer.njk' %}

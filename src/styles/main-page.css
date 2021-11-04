@@ -14,7 +14,7 @@
 		margin-left: -2rem;
 		padding-left: 2rem;
 
-		margin-top: 4rem;
+		margin-top: 3rem;
 
 		list-style: none;
 		overflow: auto;
@@ -35,8 +35,13 @@
 	}
 
 	&__link {
+		display: block;
 		color: var(--primary-color);
 		text-decoration: none;
+	}
+
+	&__ciry {
+		margin-top: 1rem;
 	}
 }
 
@@ -92,6 +97,7 @@
 		text-transform: uppercase;
 
 		background: #ffffff;
+		color: var(--primary-color);
 		border-radius: 0.625rem;
 	}
 }

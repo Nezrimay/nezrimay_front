@@ -23,6 +23,12 @@ module.exports = function (config) {
 			.join('.')
 	})
 
+	config.addFilter('getText', (arr) => {
+		const copy = arr.filter((el) => !el.data?.id)
+		console.log(copy)
+		return copy
+	})
+
 	config.addCollection('tagList', (collection) => {
 		const set = new Set()
 		for (const item of collection.getAllSorted()) {
