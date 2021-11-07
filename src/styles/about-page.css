@@ -1,0 +1,10 @@
+.about-page {
+  padding: var(--x6) var(--x2) var(--x9);
+}
+
+.info {
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 115%;
+  color: var(--primary-color);
+}
