@@ -9,7 +9,16 @@ layout: page.njk
 <main class="main-page">
 	<h1 class="visually-hidden">Незримая надстройка</h1>
 
-	<section class="best-pages">
+	<section class="about">
+		<!-- <h2 class="about__title">Незримая Надстройка</h2> -->
+		<p class="about__subtitle">
+			Переоткрытие сокровищ домодерного Крыма, вселенные в форме кенас,
+			вымышленные этюды Мешкова, покраска Черного моря, трансисторизм и
+			бойсовские татары
+		</p>
+	</section>
+
+	<!-- <section class="best-pages">
 		<h2 class="best-pages__title grotesk grotesk-h1">Лучшие материалы</h2>
 		<ul class="best-pages__list">
 			{% for page in best %}
@@ -31,7 +40,7 @@ layout: page.njk
 			</li>
 			{%endfor%}
 		</ul>
-	</section>
+	</section> -->
 
 	<section class="last-pages">
 		<h2 class="last-pages__title grotesk grotesk-h1">Все публикации</h2>
@@ -55,15 +64,6 @@ layout: page.njk
 			</li>
 			{%endfor%}
 		</ul>
-	</section>
-
-	<section class="about">
-		<h2 class="about__title">Незримая Надстройка</h2>
-		<p class="about__subtitle">
-			Переоткрытие сокровищ домодерного Крыма, вселенные в форме кенас,
-			вымышленные этюды Мешкова, покраска Черного моря, трансисторизм и
-			бойсовские татары
-		</p>
 	</section>
 
 	{{ content | safe }}

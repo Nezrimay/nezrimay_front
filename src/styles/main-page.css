@@ -1,5 +1,5 @@
 .main-page {
-	padding: 6rem 2rem 0;
+	padding: 0 2rem;
 }
 
 .best-pages {
@@ -46,6 +46,7 @@
 }
 
 .last-pages {
+	margin-top: 4rem;
 	margin-bottom: 9rem;
 	&__title {
 		margin-bottom: 3rem;

@@ -2,14 +2,14 @@
   pageTags: [
     {
       name: 'Поэзия',
-      link: 'poetry',
+      link: 'prose',
     }, 
     {
       name: 'Иван Овичников',
       link: 'id-author',
     }
   ]
-  tags: ['poetry', 'id-author']
+  tags: ['prose', 'id-author']
   date: 2019-10-11
   dates: '2019-10-11'
   title: 'Перестал dawdaи смеётся'
