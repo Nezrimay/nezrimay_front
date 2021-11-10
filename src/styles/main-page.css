@@ -1,25 +1,57 @@
 .main-page {
-	padding: 6rem 2rem 0;
+	padding: 0 2rem;
 }
 
 .best-pages {
-	margin-bottom: 3rem;
+	margin-bottom: 6rem;
 
 	&__list {
 		display: flex;
 		column-gap: 3rem;
 		align-items: center;
 
-		margin-top: 4rem;
-		padding-bottom: 3rem;
+		width: calc(100% + 4rem);
+		margin-left: -2rem;
+		padding-left: 2rem;
+
+		margin-top: 3rem;
 
 		list-style: none;
 		overflow: auto;
+
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+		}
+	}
+
+	&__link-wraper {
+		margin-top: 3rem;
+
+		background-image: url('/images/arrow.svg');
+		background-position: 100%;
+		background-repeat: no-repeat;
+		background-size: 6.25rem 2.5rem;
+	}
+
+	&__link {
+		display: block;
+		color: var(--primary-color);
+		text-decoration: none;
+	}
+
+	&__ciry {
+		margin-top: 1rem;
 	}
 }
 
 .last-pages {
+	margin-top: 4rem;
 	margin-bottom: 9rem;
+	&__title {
+		margin-bottom: 3rem;
+	}
+
 	&__list {
 		list-style: none;
 	}
@@ -33,7 +65,6 @@
 	position: relative;
 	&__wrapper-img {
 		min-width: 31.25rem;
-		min-height: 31.25rem;
 	}
 
 	&__img {
@@ -67,6 +98,7 @@
 		text-transform: uppercase;
 
 		background: #ffffff;
+		color: var(--primary-color);
 		border-radius: 0.625rem;
 	}
 }
@@ -82,7 +114,7 @@
 	&__title {
 		font-style: normal;
 		font-weight: bold;
-		font-size: 28px;
+		font-size: 3.5rem;
 		line-height: 115%;
 	}
 
@@ -90,7 +122,7 @@
 		margin-top: 3rem;
 		font-style: normal;
 		font-weight: 300;
-		font-size: 18px;
+		font-size: 2.25rem;
 		line-height: 115%;
 	}
 }

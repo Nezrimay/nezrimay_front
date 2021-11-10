@@ -2,20 +2,20 @@
   pageTags: [
     {
       name: 'Поэзия',
-      link: 'poetry',
+      link: 'prose',
     }, 
     {
       name: 'Иван Овичников',
       link: 'id-author',
     }
   ]
-  tags: ['poetry', 'id-author']
-  dates: '01.02.2021'
-  srcimage: 'name'
-  title: 'Перестал и смеётся'
+  tags: ['prose', 'id-author']
+  date: 2019-10-11
+  dates: '2019-10-11'
+  title: 'Перестал dawdaи смеётся'
   author: 'Иван Овчиников'
   picture: 
-    src: './foto.jpg'
+    src: 'foto.jpg'
     name: 'Важность'
     author: 'Красавчик классный'
     alt: 'Абстрактное изображение'

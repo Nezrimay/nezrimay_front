@@ -10,13 +10,13 @@
     }
   ]
   tags: ['interview', 'id-author']
+  date: 2019-09-12
   dates: '01.02.2021'
-  srcimage: 'name'
   title: 'Перестал и смеётся'
   subtitle: 'Беседа с основателем Canary Records'
   author: 'Иван Овчиников'
   picture: 
-    src: './foto.jpg'
+    src: 'foto.jpg'
     name: 'Важность'
     author: 'Красавчик классный'
     alt: 'Абстрактное изображение'

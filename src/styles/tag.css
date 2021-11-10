@@ -1,0 +1,17 @@
+.tag-page {
+	padding: 6rem 2rem 6rem;
+
+	&_not-padding {
+		padding-top: 0;
+	}
+
+	&__section {
+		width: calc(100% + 4rem);
+		margin-left: -2rem;
+		padding: 3rem 2rem;
+
+		&:not(:first-of-type) {
+			border-top: 0.25rem solid var(--primary-color);
+		}
+	}
+}

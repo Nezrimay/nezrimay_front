@@ -1,0 +1,48 @@
+---
+layout: page.njk
+permalink: /authors/
+title: 'Текста'
+---
+
+{% include 'header.njk' %}
+
+<main class="tag-page tag-page_not-padding">
+	<h1 class="visually-hidden">Текста</h1>
+	{% for author in collections.author %}
+	<section class="tag-page__section">
+		<h2 class="best-pages__title grotesk grotesk-h1">
+			{{ author.data.title }}
+		</h2>
+		<p class="best-pages__city grotesk grotesk-b2 grotesk_secondary">
+			{{ author.data.city }}
+		</p>
+		<ul class="best-pages__list">
+			{%for art in collections[author.data.id] | getText%}
+			<li class="best-pages__item">
+				<a href="{{ art.url }}">
+					<div class="pages">
+						<div class="pages__wrapper-img">
+							<img
+								class="pages__img"
+								style="width: 31.25rem; height: 31.25rem"
+								src="{{ art.url }}{{ art.data.picture.src }}"
+							/>
+						</div>
+						<p class="pages__title grotesk grotesk-nav">
+							{{ art.data.title }}
+						</p>
+					</div>
+				</a>
+			</li>
+			{%endfor%}
+		</ul>
+		<div class="best-pages__link-wraper">
+			<a href="{{ author.url }}" class="best-pages__link grotesk grotesk-b1">
+				Об авторе
+			</a>
+		</div>
+	</section>
+	{% endfor %}
+</main>
+
+{% include 'footer.njk' %}
