@@ -8,7 +8,7 @@ layout: page.njk
 	<ul class="articles__tags-list">
 		{% for tag in pageTags %}
 		<li class="articles__tags-item">
-			<a href="{{ tag.link }}" class="articles__tags-link grotesk grotesk-b2">
+			<a href="/tag/{{ tag.link }}" class="articles__tags-link grotesk grotesk-b2">
 				{{ tag.name }}
 			</a>
 		</li>

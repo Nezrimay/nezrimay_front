@@ -1,7 +1,7 @@
 const markdown = require('markdown-it')({ html: true })
+const htmlmin = require('html-minifier')
 
 module.exports = function (config) {
-	// config.addPassthroughCopy('src/styles')
 	config.addPassthroughCopy('src/fonts')
 	config.addPassthroughCopy('src/images')
 	config.addPassthroughCopy('src/articles/**/*.(jpg)')
@@ -25,7 +25,6 @@ module.exports = function (config) {
 
 	config.addFilter('getText', (arr) => {
 		const copy = arr.filter((el) => !el.data?.id)
-		console.log(copy)
 		return copy
 	})
 
@@ -34,7 +33,6 @@ module.exports = function (config) {
 		for (const item of collection.getAllSorted()) {
 			if ('tags' in item.data) {
 				const tags = item.data.tags
-				console.log(item.data.date)
 				if (typeof tags === 'string') {
 					tags = [tags]
 				}
@@ -44,6 +42,19 @@ module.exports = function (config) {
 			}
 		}
 		return [...set].sort()
+	})
+
+	config.addTransform('htmlmin', (content, outputPath) => {
+		if (outputPath && outputPath.endsWith('.html')) {
+			const result = htmlmin.minify(content, {
+				removeComments: true,
+				collapseWhitespace: true,
+			})
+
+			return result
+		}
+
+		return content
 	})
 
 	return {
