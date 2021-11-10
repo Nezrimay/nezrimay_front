@@ -8,7 +8,10 @@ layout: page.njk
 	<ul class="articles__tags-list">
 		{% for tag in pageTags %}
 		<li class="articles__tags-item">
-			<a href="/tag/{{ tag.link }}" class="articles__tags-link grotesk grotesk-b2">
+			<a
+				href="/tag/{{ tag.link }}"
+				class="articles__tags-link grotesk grotesk-b2"
+			>
 				{{ tag.name }}
 			</a>
 		</li>
@@ -27,7 +30,7 @@ layout: page.njk
 		{% endif %}
 
 		<p class="articles-header__author grotesk grotesk-b2">{{ author }}</p>
-
+		{% if picture %}
 		<div class="articles-header__wrapper-img">
 			<img
 				class="articles-header__img"
@@ -42,6 +45,7 @@ layout: page.njk
 				</span>
 			</p>
 		</div>
+		{% endif %}
 	</div>
 
 	<div class="articles__content">
