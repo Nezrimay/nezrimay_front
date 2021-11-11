@@ -1,0 +1,38 @@
+---
+title: 'Покупка товара'
+permalink: /order/
+layout: page.njk
+---
+
+{% include 'header.njk' %}
+
+<main class="order-page">
+	<h1 class="visually-hidden">Форма заказа</h1>
+  <!-- На время отсутствия какого-либо бекенда метод get, только для того, чтобы потестировать страницу ответа -->
+	<form action="/response/" method="get"> 
+		<fieldset class="order-page__fieldset">
+			<legend class="order-page__legend">Информация о заказе</legend>
+			<p class="order-page__wrapper">
+				<input class="order-page__input" type="text" name="Имя" id="name" placeholder="Имя*" required />
+				<label class="oreder-page__label visually-hidden" for="name">Имя</label>
+        <span class="order-page__warning">Ваше имя должно быть указано.</span>
+			</p>
+      <p class="order-page__wrapper">
+				<input class="order-page__input" type="email" name="Почта" id="email" placeholder="Email*" required />
+				<label class="oreder-page__label visually-hidden" for="name">Почта</label>
+        <span class="order-page__warning">Ваша почта должна быть настоящей, как и вы.</span>
+			</p>
+      <p class="order-page__wrapper">
+				<input class="order-page__input" type="text" name="Телефон" id="phone" placeholder="Телефон" />
+				<label class="oreder-page__label visually-hidden" for="name">Телефон</label>
+			</p>
+      <p class="order-page__wrapper">
+				<input class="order-page__input" type="text" name="Адрес" id="address" placeholder="Адрес" />
+				<label class="oreder-page__label visually-hidden" for="address">Адрес</label>
+			</p>
+			<button type="submit" class="order-page__submit">Купить</button>
+		</fieldset>
+	</form>
+</main>
+
+{% include 'footer.njk' %}
