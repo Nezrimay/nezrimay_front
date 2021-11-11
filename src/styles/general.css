@@ -42,6 +42,11 @@ a {
 	text-decoration: none;
 }
 
+main {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;

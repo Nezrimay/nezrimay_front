@@ -34,9 +34,10 @@
 			font-family: 'Wremena';
 			font-style: normal;
 			font-weight: normal;
-			font-size: 16px;
+			font-size: 2rem;
 			line-height: 135%;
 			color: var(--primary-color);
+			word-break: break-word;
 
 			&:not(:last-child) {
 				margin-bottom: 4rem;
@@ -53,6 +54,19 @@
 			font-size: 2.75rem;
 			line-height: 80%;
 			color: var(--primary-color);
+		}
+
+		& ul,
+		ol {
+			padding-left: 1.5rem;
+		}
+
+		& li {
+			list-style: auto;
+		}
+
+		& img {
+			width: 100%;
 		}
 
 		& .poem p:not(:last-child),
