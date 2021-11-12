@@ -1,0 +1,114 @@
+---
+layout: page.njk
+permalink: /product/
+title: 'Товар'
+---
+
+{% include 'header.njk' %}
+
+<main class="product-page">
+	<h1 class="visually-hidden">Карточка товара</h1>
+	<ul class="product-page__tags-list">
+		<li class="product-page__tags-item">
+			<a
+				href="{{ tag.link }}"
+				class="product-page__tags-link grotesk grotesk-b2"
+			>
+				Живопись
+			</a>
+		</li>
+		<li class="product-page__tags-item">
+			<a
+				href="{{ tag.link }}"
+				class="product-page__tags-link grotesk grotesk-b2"
+			>
+				Скульптура
+			</a>
+		</li>
+		<li class="product-page__tags-item">
+			<a
+				href="{{ tag.link }}"
+				class="product-page__tags-link grotesk grotesk-b2"
+			>
+				nft
+			</a>
+		</li>
+	</ul>
+
+	<article class="card card_full">
+		<div class="card__carousel">
+			<img
+				class="card__img"
+				src="../images/card.png"
+				alt="Тут должен быть крутой текст описывающий картину"
+				width="100%"
+			/>
+			<ul class="card__carousel-control">
+				<li class="card__carousel-item">
+					<button
+						class="card__carousel-button"
+						aria-label="Переключить на первую картинку"
+					></button>
+				</li>
+				<li class="card__carousel-item">
+					<button
+						class="card__carousel-button"
+						aria-label="Переключить на вторую картинку"
+					></button>
+				</li>
+				<li class="card__carousel-item">
+					<button
+						class="card__carousel-button card__carousel-button_active"
+						aria-label="Переключить на третью картинку"
+					></button>
+				</li>
+				<li class="card__carousel-item">
+					<button
+						class="card__carousel-button"
+						aria-label="Переключить на четвертую картинку"
+					></button>
+				</li>
+				<li class="card__carousel-item">
+					<button
+						class="card__carousel-button"
+						aria-label="Переключить на пятую картинку"
+					></button>
+				</li>
+			</ul>
+		</div>
+		<div class="card__wrapper">
+			<h2 class="card__header grotesk grotesk-h2">Картина маслом</h2>
+			<span class="card__price">1400 <span>₽</span></span>
+			<a class="card__link" href="/order/">Купить</a>
+			<p class="card__description">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab corrupti
+				nesciunt? Consequatur voluptas dignissimos tempora, consequuntur
+				excepturi laborum qui accusantium similique itaque consectetur a eum?
+				Excepturi natus placeat odit!
+			</p>
+			<div class="card__details">
+				<h3 class="card__details-header">Детали</h3>
+				<ul class="card__details-list">
+					<li class="card__details-item">
+						<span class="card__details-item_left">Материал:</span>
+						<span class="card__details-item_right">Акрил, ткань, керамика</span>
+					</li>
+					<li class="card__details-item">
+						<span class="card__details-item_left">Размер:</span>
+						<span class="card__details-item_right">16 × 24 см</span>
+					</li>
+					<li class="card__details-item">
+						<span class="card__details-item_left">Материал:</span>
+						<span class="card__details-item_right">Акрил, ткань, керамика</span>
+					</li>
+					<li class="card__details-item">
+						<span class="card__details-item_left">Размер:</span>
+						<span class="card__details-item_right">16 × 24 см</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</article>
+</main>
+
+{% include 'footer.njk' %}

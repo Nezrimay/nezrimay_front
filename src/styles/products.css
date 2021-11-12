@@ -1,0 +1,163 @@
+.products-page {
+	padding: var(--x2) 0 var(--x9);
+	&__tags-list {
+		padding: 0 var(--x2);
+		display: flex;
+		list-style: none;
+	}
+
+	&__tags-item:not(:last-child) {
+		margin-right: 1.25rem;
+	}
+
+	&__tags-link {
+		display: block;
+		padding: 0.75rem 1rem 0.5rem;
+		background-color: var(--primary-color);
+		color: var(--white-color);
+		line-height: 75.5%;
+
+		border-radius: 0.625rem;
+
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	&__products-item {
+		padding-top: var(--x4);
+		&:not(:last-child) {
+			padding-bottom: var(--x4);
+			border-bottom: 2px solid var(--primary-color);
+		}
+	}
+}
+
+.card {
+	&__header {
+		margin: var(--x3) 0 var(--x2);
+	}
+
+	&__wrapper {
+		padding: 0 var(--x2);
+	}
+
+	&__carousel {
+		position: relative;
+
+		&-control {
+			position: absolute;
+			bottom: 2.5rem;
+			left: 50%;
+			display: flex;
+			gap: 8px;
+			transform: translateX(-50%);
+		}
+
+		&-button {
+			width: 1rem;
+			height: 1rem;
+			border: 1px solid var(--white-color);
+			border-radius: 50%;
+			background-color: transparent;
+			cursor: pointer;
+
+			&_active {
+				background-color: var(--white-color);
+			}
+		}
+	}
+
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: var(--x4);
+	}
+
+	&__price {
+		font-family: var(--primary-font);
+		font-weight: 300;
+		font-size: 2.5rem;
+		line-height: 115%;
+		color: var(--primary-color);
+	}
+
+	&__type {
+		font-family: var(--primary-font);
+		font-weight: 300;
+		font-size: 2.5rem;
+		line-height: 115%;
+		color: var(--secondary-color);
+	}
+
+	&__link {
+		display: block;
+		height: var(--x6);
+		background-color: var(--primary-color);
+		border-radius: 0.625rem;
+		font-family: var(--primary-font);
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 115%;
+		text-align: center;
+		color: var(--white-color);
+		/* Чтобы осознать что это и зачем https://ishadeed.com/article/button-label-alignment/ */
+		&::before {
+			content: '';
+			display: inline-block;
+			height: var(--x6);
+			vertical-align: middle;
+		}
+	}
+
+	&__description {
+		margin: var(--x4) 0 var(--x6);
+		font-family: var(--primary-font);
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 115%;
+		color: var(--secondary-color);
+	}
+
+	&__details {
+		display: flex;
+		flex-direction: column;
+		&-header {
+			width: 16.75rem;
+			align-self: flex-end;
+			font-size: 1.75rem;
+			font-family: var(--primary-font);
+			font-weight: 400;
+			line-height: 105%;
+			color: var(--secondary-color);
+			margin-bottom: var(--x3);
+		}
+
+		&-item {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			font-family: var(--primary-font);
+			font-weight: 400;
+			font-size: 2rem;
+			line-height: 115%;
+			color: var(--secondary-color);
+
+			&_right {
+				width: 16.75rem;
+				align-self: flex-end;
+				color: var(--primary-color);
+			}
+
+			&:not(:last-child) {
+				margin-bottom: var(--x2);
+			}
+		}
+	}
+
+	&_full {
+		.card__price {
+			display: block;
+			margin-bottom: var(--x3);
+		}
+	}
+}

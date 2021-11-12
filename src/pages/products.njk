@@ -1,0 +1,197 @@
+---
+layout: page.njk
+permalink: /products/
+title: 'Каталог товаров'
+---
+
+{% include 'header.njk' %}
+
+<main class="products-page">
+	<h1 class="visually-hidden">Каталог товаров</h1>
+	<ul class="products-page__tags-list">
+		<li class="products-page__tags-item">
+			<a
+				href="{{ tag.link }}"
+				class="products-page__tags-link grotesk grotesk-b2"
+			>
+				Живопись
+			</a>
+		</li>
+		<li class="products-page__tags-item">
+			<a
+				href="{{ tag.link }}"
+				class="products-page__tags-link grotesk grotesk-b2"
+			>
+				Скульптура
+			</a>
+		</li>
+		<li class="products-page__tags-item">
+			<a
+				href="{{ tag.link }}"
+				class="products-page__tags-link grotesk grotesk-b2"
+			>
+				nft
+			</a>
+		</li>
+	</ul>
+	<ul class="products-page__products-list">
+		<li class="products-page__products-item">
+			<article class="card">
+				<div class="card__carousel">
+					<img
+						class="card__img"
+						src="../images/card.png"
+						alt="Тут должен быть крутой текст описывающий картину"
+						width="100%"
+					/>
+					<ul class="card__carousel-control">
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на первую картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на вторую картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button card__carousel-button_active"
+								aria-label="Переключить на третью картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на четвертую картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на пятую картинку"
+							></button>
+						</li>
+					</ul>
+				</div>
+				<div class="card__wrapper">
+					<h2 class="card__header grotesk grotesk-h2">Картина маслом</h2>
+					<div class="card__flex">
+						<span class="card__type">Живопись</span>
+						<span class="card__price">1400 <span>₽</span></span>
+					</div>
+					<a class="card__link" href="/product/">Купить</a>
+				</div>
+			</article>
+		</li>
+		<li class="products-page__products-item">
+			<article class="card">
+				<div class="card__carousel">
+					<img
+						class="card__img"
+						src="../images/card.png"
+						alt="Тут должен быть крутой текст описывающий картину"
+						width="100%"
+					/>
+					<ul class="card__carousel-control">
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на первую картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на вторую картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button card__carousel-button_active"
+								aria-label="Переключить на третью картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на четвертую картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на пятую картинку"
+							></button>
+						</li>
+					</ul>
+				</div>
+				<div class="card__wrapper">
+					<h2 class="card__header grotesk grotesk-h2">Картина маслом</h2>
+					<div class="card__flex">
+						<span class="card__type">Живопись</span>
+						<span class="card__price">1400 <span>₽</span></span>
+					</div>
+					<a class="card__link" href="/product/">Купить</a>
+				</div>
+			</article>
+		</li>
+		<li class="products-page__products-item">
+			<article class="card">
+				<div class="card__carousel">
+					<img
+						class="card__img"
+						src="../images/card.png"
+						alt="Тут должен быть крутой текст описывающий картину"
+						width="100%"
+					/>
+					<ul class="card__carousel-control">
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на первую картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на вторую картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button card__carousel-button_active"
+								aria-label="Переключить на третью картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на четвертую картинку"
+							></button>
+						</li>
+						<li class="card__carousel-item">
+							<button
+								class="card__carousel-button"
+								aria-label="Переключить на пятую картинку"
+							></button>
+						</li>
+					</ul>
+				</div>
+				<div class="card__wrapper">
+					<h2 class="card__header grotesk grotesk-h2">Картина маслом</h2>
+					<div class="card__flex">
+						<span class="card__type">Живопись</span>
+						<span class="card__price">1400 <span>₽</span></span>
+					</div>
+					<a class="card__link" href="/product/">Купить</a>
+				</div>
+			</article>
+		</li>
+	</ul>
+</main>
+
+{% include 'footer.njk' %}
