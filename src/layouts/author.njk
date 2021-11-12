@@ -33,31 +33,35 @@ layout: page.njk
 			{% endfor %}
 		</ul>
 
+		<div class="author__content">
+			{{ content | safe }}
+		</div>
+
+		{% if collections[id] | length %}
+
 		<div class="author__works works">
-			<p class="works__text grotesk grotesk-b2 grotesk_secondary">Работы</p>
+			<p class="works__text grotesk grotesk-b1 grotesk_secondary">Работы</p>
 			<ul class="works__list">
-				{% for work in workList%}
+				{% for work in collections[id] %}
 				<li class="works__item">
 					<a href="{{ work.url }}" target="_blank" class="work">
 						<img
 							class="work__img"
-							src="{{ work.img }}"
-							alt="Работа автора - {{ title }}, название работы: {{
-								work.text
-							}}"
+							src="{{ work.url }}{{ work.data.picture.src }}"
+							alt="Работа автора - {{
+								work.data.picture.author
+							}}, название работы: {{ work.data.picture.name }}"
 							width="250"
 							height="250"
 						/>
-						<p class="work__title grotesk grotesk-nav">{{ work.text }}</p>
+						<p class="work__title grotesk grotesk-nav">{{ work.data.title }}</p>
 					</a>
 				</li>
 				{%endfor%}
 			</ul>
 		</div>
-	</div>
 
-	<div class="author__content">
-		{{ content | safe }}
+		{% endif %}
 	</div>
 </main>
 

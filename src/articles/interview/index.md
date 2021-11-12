@@ -9,7 +9,7 @@
       link: 'id-author',
     }
   ]
-  tags: ['interview', 'id-author']
+  tags: ['interview', 'grechina']
   date: 2019-09-12
   dates: '01.02.2021'
   title: 'Перестал и смеётся'
