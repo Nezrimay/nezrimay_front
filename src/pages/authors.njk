@@ -16,8 +16,9 @@ title: 'Текста'
 		<p class="best-pages__city grotesk grotesk-b2 grotesk_secondary">
 			{{ author.data.city }}
 		</p>
+		{% if collections[author.data.id] | length%}
 		<ul class="best-pages__list">
-			{%for art in collections[author.data.id] | getText%}
+			{%for art in collections[author.data.id]%}
 			<li class="best-pages__item">
 				<a href="{{ art.url }}">
 					<div class="pages">
@@ -36,6 +37,7 @@ title: 'Текста'
 			</li>
 			{%endfor%}
 		</ul>
+		{% endif %}
 		<div class="best-pages__link-wraper">
 			<a href="{{ author.url }}" class="best-pages__link grotesk grotesk-b1">
 				Об авторе
