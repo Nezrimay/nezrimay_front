@@ -6,7 +6,7 @@ title: 'Дмитрий Литвиненко'
 city: 'Сочи'
 description: 'Студент философского факультета Таврической академии КФУ имени В. И. Вернадского.'
 
-socialList: [{ url: 'inst', text: 'Инстаграмм' }]
+socialList: [{ url: 'inst', text: 'Инстаграм' }]
 
 layout: author.njk
 ---

@@ -1,12 +1,12 @@
 ---
-pageTags: [{ name: 'Юля Гречина', link: 'grechina' }]
-tags: ['author']
+pageTags: [{ name: 'Юля Гречина', link: '/authors/grechina' }]
+tags: 'author'
 id: 'grechina'
 title: 'Юля Гречина'
 city: 'Ялта'
 description: 'Окончила Гуманитарно-педагогическую академию имени В. И. Вернадского в Ялте по специальности графический дизайн. В 2017 вступила в состав Творческого объединения молодых художников (ТОМХ) при ВТОО "Союз художников России".'
 
-socialList: [{ url: 'https://www.instagram.com/yaltinskaya.grechka/', text: 'Инстаграмм' }]
+socialList: [{ url: 'https://www.instagram.com/yaltinskaya.grechka/', text: 'Инстаграм' }]
 
 layout: author.njk
 ---
@@ -20,4 +20,6 @@ layout: author.njk
 - 2019 – «Пробуждение». ТОМХ. Литературно-мемориальный музей Александра Грина. Феодосия. Россия.
 - 2019 – «Мы играем джаз». ТОМХ. Никитский ботанический сад. Россия.
 
+Товары:
 
+[![asdaw](/images/card.png)](/product)

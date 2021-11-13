@@ -14,7 +14,7 @@
   dates: '09.12.2021'
   title: 'Заметки о кибертексте. Видеоигры'
   author: 'Дмитрий Литвиненко'
-    picture: 
+  picture: 
     src: 'foto.jpg'
     name: 'Важность'
     author: 'Вихров'

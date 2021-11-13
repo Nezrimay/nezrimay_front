@@ -53,6 +53,23 @@
 				margin-bottom: 1rem;
 			}
 		}
+
+		p {
+			margin-top: 2rem;
+			font-weight: bold;
+			font-size: 2.75rem;
+			line-height: 80%;
+		}
+
+		& img {
+			aspect-ratio: 1;
+			margin-left: -2rem;
+		}
+
+		& a {
+			text-decoration: none;
+			color: var(--primary-color);
+		}
 	}
 }
 

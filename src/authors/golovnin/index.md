@@ -4,9 +4,9 @@ tags: 'author'
 id: 'golovnin'
 title: 'Руслан Головнин'
 city: 'Симферополь'
-description: '.Nf'
+description: 'Главный редактор.'
 
-socialList: [{ url: 'inst', text: 'Инстаграмм' }]
+socialList: [{ url: 'https://www.instagram.com/golo_khovorskiy/', text: 'Инстаграм' }]
 
 layout: author.njk
 ---
