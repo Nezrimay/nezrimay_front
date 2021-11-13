@@ -9,7 +9,17 @@ const nested = require('postcss-nested')
 const csso = require('postcss-csso')
 
 gulp.task('styles:compress', () => {
-	const plugins = [postImport(), presetEnv(), nested(), csso()]
+	const plugins = [
+		postImport(),
+		presetEnv({
+			stage: 4,
+			features: {
+				'dir-pseudo-class': false,
+			},
+		}),
+		nested(),
+		csso(),
+	]
 
 	return gulp
 		.src('src/styles/style.css')
