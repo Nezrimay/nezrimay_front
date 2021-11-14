@@ -9,7 +9,7 @@
       link: '/authors/golovnin',
     }
   ]
-  tags: ['poetry', 'golovnin']
+  tags: ['poetry', 'golovnin', 'articles']
   date: 2021-12-01
   dates: '01.12.2021'
   title: 'Семиглазый гогерджин, или словно язык обретенный'

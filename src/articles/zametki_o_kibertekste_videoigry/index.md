@@ -9,7 +9,7 @@
       link: '/authors/litvinenko',
     }
   ]
-  tags: ['theory', 'litvinenko']
+  tags: ['theory', 'litvinenko', 'articles']
   date: 2021-12-09
   dates: '09.12.2021'
   title: 'Заметки о кибертексте. Видеоигры'

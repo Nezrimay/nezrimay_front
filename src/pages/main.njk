@@ -18,47 +18,23 @@ layout: page.njk
 		</p>
 	</section>
 
-	<!-- <section class="best-pages">
-		<h2 class="best-pages__title grotesk grotesk-h1">Лучшие материалы</h2>
-		<ul class="best-pages__list">
-			{% for page in best %}
-			<li class="best-pages__item">
-				<div class="pages">
-					<div class="pages__wrapper-img">
-						<img
-							class="pages__img"
-							width="250"
-							height="250"
-							src="{{ page.image }}"
-						/>
-					</div>
-					<p class="pages__title grotesk grotesk-nav">{{ page.title }}</p>
-					<p class="pages__date grotesk grotesk_secondary grotesk-b2">
-						{{ page.date }}
-					</p>
-				</div>
-			</li>
-			{%endfor%}
-		</ul>
-	</section> -->
-
 	<section class="last-pages">
 		<h2 class="last-pages__title grotesk grotesk-h1">Все публикации</h2>
 		<ul class="last-pages__list">
-			{% for page in pages %}
+			{% for page in collections.articles %}
 			<li class="last-pages__item">
 				<div class="pages">
-					<div class="pages__tags">{{ page.tags }}</div>
+					<div class="pages__tags">{{ page.data.pageTags[0].name }}</div>
 					<div class="pages__wrapper-img">
 						<img
 							class="pages__img pages__img_full"
 							width="100%"
-							src="{{ page.image }}"
+							src="{{ page.url }}{{ page.data.picture.src }}"
 						/>
 					</div>
-					<p class="pages__title grotesk grotesk-nav">{{ page.title }}</p>
+					<p class="pages__title grotesk grotesk-nav">{{ page.data.title }}</p>
 					<p class="pages__date grotesk grotesk_secondary grotesk-b2">
-						{{ page.date }}
+						{{ page.date | transformDate }}
 					</p>
 				</div>
 			</li>
