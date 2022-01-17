@@ -2,7 +2,7 @@
 	--primary-color: #171717;
 	--secondary-color: #666666;
 	--white-color: #ffffff;
-	--red-color: #EB5757;
+	--red-color: #eb5757;
 	--primary-font: 'Neue Machina', arial, helvetica, sans-serif;
 	--secondary-font: 'Wremena', arial, helvetica, sans-serif;
 	--x1: 1rem;
@@ -25,7 +25,7 @@
 }
 
 html {
-	font-size: min(calc(100vw / 40), 16px);
+	font-size: 8px;
 	font-family: var(--primary-font);
 }
 

@@ -122,6 +122,17 @@
 		margin-left: -2rem;
 	}
 
+	&__back {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 376px;
+		z-index: -1;
+		background-color: #000000;
+		opacity: 0.5;
+		margin-left: -2rem;
+	}
+
 	&__alt-img {
 		margin-top: 2rem;
 	}
@@ -134,4 +145,38 @@
 	font-size: 2rem;
 	line-height: 115%;
 	color: var(--primary-color);
+}
+
+
+@media (min-width: 1024px) {
+	.articles {
+		position: relative;
+	}
+
+	.articles-header {
+		color: var(--white-color);
+
+		& p {
+			color: var(--white-color);
+		}
+
+		&__img {
+			position: absolute;
+			top: 0;
+			height: 376px;
+			width: 100%;
+			z-index: -2;
+		}
+
+		&__back {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 376px;
+			z-index: -1;
+			background-color: #000000;
+			opacity: 0.5;
+			margin-left: -2rem;
+		}
+	}
 }
