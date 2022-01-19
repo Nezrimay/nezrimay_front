@@ -1,10 +1,16 @@
 .footer {
-	padding: var(--x4) var(--x2) var(--x4);
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	column-gap: 2.5rem;
-	row-gap: var(--x4);
 	border-top: 0.25rem solid var(--primary-color);
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		row-gap: var(--x4);
+		column-gap: 2.5rem;
+		
+		max-width: 1024px;
+		margin: 0 auto;
+		padding: var(--x4) var(--x2) var(--x4);
+	}
 }
 
 .footer-links {

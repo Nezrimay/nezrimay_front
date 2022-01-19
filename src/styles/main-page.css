@@ -1,5 +1,4 @@
 .main-page {
-	padding: 0 2rem;
 }
 
 .best-pages {
@@ -26,7 +25,7 @@
 	}
 
 	&__link-wraper {
-		margin-top: 3rem;
+		margin: 3rem 2rem;
 
 		background-image: url('/images/arrow.svg');
 		background-position: 100%;
@@ -46,48 +45,69 @@
 }
 
 .last-pages {
-	margin-top: 4rem;
-	margin-bottom: 9rem;
 	&__title {
 		margin-bottom: 3rem;
 	}
 
 	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 320px);
+		justify-content: center;
+		grid-gap: 32px;
 		list-style: none;
 	}
 
 	&__item:not(:first-child) {
-		margin-top: 4rem;
 	}
 }
 
 .pages {
 	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-height: 25rem;
+	padding: 2rem;
+
 	&__wrapper-img {
-		min-width: 31.25rem;
+		min-width: 40rem;
 	}
 
 	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -2;
+
 		&_full {
-			width: calc(100% + 4rem);
 			aspect-ratio: 8 / 5;
-			margin-left: -2rem;
 		}
 	}
 
+	&__back-img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -1;
+
+		min-height: 25rem;
+		width: 100%;
+		background-color: #000;
+		opacity: 0.6;
+	}
+
 	&__title {
-		margin-top: 2rem;
+		margin-top: auto;
+		color: var(--white-color)
 	}
 
 	&__date {
 		margin-top: 1rem;
+		color: var(--white-color)
 	}
 
 	&__tags {
-		position: absolute;
-		top: 2rem;
-		left: 2rem;
-
 		padding: 0.75rem 1rem 0.5rem;
 
 		font-style: normal;
@@ -104,9 +124,7 @@
 }
 
 .about {
-	width: calc(100% + 4rem);
 	padding: 6rem 2rem 9rem;
-	margin-left: -2rem;
 
 	background-color: var(--primary-color);
 	color: var(--white-color);

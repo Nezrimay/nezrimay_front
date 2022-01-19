@@ -133,6 +133,8 @@
 		flex-direction: row;
 		justify-content: space-between;
 		padding: 0;
+		margin: 0 auto;
+		width: 1024px;
 		height: auto;
 
 		&__wrapper {
@@ -151,7 +153,6 @@
 	.navigation {
 		display: block;
 		width: auto;
-		margin-right: 4rem;
 
 		&__list {
 			display: flex;

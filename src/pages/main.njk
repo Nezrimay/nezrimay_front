@@ -43,19 +43,18 @@ layout: page.njk
 	</section> -->
 
 	<section class="last-pages">
-		<h2 class="last-pages__title grotesk grotesk-h1">Все публикации</h2>
 		<ul class="last-pages__list">
 			{% for page in pages %}
 			<li class="last-pages__item">
 				<div class="pages">
-					<div class="pages__tags">{{ page.tags }}</div>
 					<div class="pages__wrapper-img">
 						<img
 							class="pages__img pages__img_full"
-							width="100%"
 							src="{{ page.image }}"
 						/>
+						<div class="pages__back-img"></div>
 					</div>
+					<div class="pages__tags">{{ page.tags }}</div>
 					<p class="pages__title grotesk grotesk-nav">{{ page.title }}</p>
 					<p class="pages__date grotesk grotesk_secondary grotesk-b2">
 						{{ page.date }}
@@ -64,6 +63,11 @@ layout: page.njk
 			</li>
 			{%endfor%}
 		</ul>
+		<div class="best-pages__link-wraper">
+			<a href="#" class="best-pages__link grotesk grotesk-b1">
+				Остальные публикации
+			</a>
+		</div>
 	</section>
 
 	{{ content | safe }}
