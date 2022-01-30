@@ -1,11 +1,25 @@
+.authors-page {
+	padding: 0 2rem;
+}
+
 .author {
 	padding: 2rem;
 	&__info {
-		padding-top: 4rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 4rem;
+	}
+
+	&__img {
+		aspect-ratio: 1;
+		object-fit: cover;
+		width: min(100%, 415px);
 	}
 
 	&__name {
-		width: max(320px, 50%);
+		width: max(288px, 50%);
+		margin-bottom: 2rem;
 	}
 
 	&__city {
@@ -29,6 +43,10 @@
 
 	&__social-link {
 		text-decoration: none;
+	}
+
+	&__works {
+		margin-top: 2rem;
 	}
 
 	&__content {
@@ -63,7 +81,6 @@
 
 @media (min-width: 1024px) {
 	.author {
-
 		&__name {
 			font-size: 12rem;
 		}

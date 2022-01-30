@@ -5,6 +5,7 @@ id: 'golovnin'
 title: 'Руслан Головнин'
 city: 'Симферополь'
 description: '.Nf'
+img: './foto.jpg'
 
 socialList: [{ url: 'inst', text: 'Инстаграмм' }]
 

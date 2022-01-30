@@ -46,7 +46,7 @@
 
 .last-pages {
 	&__title {
-		margin-bottom: 3rem;
+		padding: 2rem;
 	}
 
 	&__list {
