@@ -10,7 +10,6 @@ layout: page.njk
 	<h1 class="visually-hidden">Незримая надстройка</h1>
 
 	<section class="about">
-		<!-- <h2 class="about__title">Незримая Надстройка</h2> -->
 		<p class="about__subtitle">
 			Переоткрытие сокровищ домодерного Крыма, вселенные в форме кенас,
 			вымышленные этюды Мешкова, покраска Черного моря, трансисторизм и
@@ -18,39 +17,12 @@ layout: page.njk
 		</p>
 	</section>
 
-	<!-- <section class="best-pages">
-		<h2 class="best-pages__title grotesk grotesk-h1">Лучшие материалы</h2>
-		<ul class="best-pages__list">
-			{% for page in best %}
-			<li class="best-pages__item">
-				<div class="pages">
-					<div class="pages__wrapper-img">
-						<img
-							class="pages__img"
-							width="250"
-							height="250"
-							src="{{ page.image }}"
-						/>
-					</div>
-					<p class="pages__title grotesk grotesk-nav">{{ page.title }}</p>
-					<p class="pages__date grotesk grotesk_secondary grotesk-b2">
-						{{ page.date }}
-					</p>
-				</div>
-			</li>
-			{%endfor%}
-		</ul>
-	</section> -->
-
 	<section class="last-pages">
 		<ul class="last-pages__list">
 			{% for page in pages %}
 			<li class="last-pages__item">
 				<div class="pages">
-						<img
-							class="pages__img pages__img_full"
-							src="{{ page.image }}"
-						/>
+					<img class="pages__img pages__img_full" src="{{ page.image }}" />
 					<div class="pages__wrapper-text">
 						<div class="pages__tags">{{ page.tags }}</div>
 						<p class="pages__title grotesk grotesk-nav">{{ page.title }}</p>

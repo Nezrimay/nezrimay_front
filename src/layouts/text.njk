@@ -5,49 +5,48 @@ layout: page.njk
 {% include 'header.njk' %}
 
 <main class="articles">
-	<ul class="articles__tags-list">
-		{% for tag in pageTags %}
-		<li class="articles__tags-item">
-			<a
-				href="/tag/{{ tag.link }}"
-				class="articles__tags-link grotesk grotesk-b2"
-			>
-				{{ tag.name }}
-			</a>
-		</li>
-		{% endfor %}
-	</ul>
-	<div class="articles__header-wrapper articles-header">
-		<p class="articles-header__date grotesk grotesk-b2 grotesk_secondary">
-			{{ dates }}
-		</p>
-		<h1 class="articles-header__title wremena wremena-h1">{{ title }}</h1>
-
-		{% if subtitle %}
-		<p class="articles-header__subtitle grotesk grotesk-b2 grotesk_secondary">
-			{{ subtitle }}
-		</p>
-		{% endif %}
-
-		<p class="articles-header__author grotesk grotesk-b2">{{ author }}</p>
-		{% if picture %}
-		<div class="articles-header__wrapper-img">
-			<img
-				class="articles-header__img"
-				src="{{ picture.src }}"
-				width="100%"
-				alt="{{ picture.alt }}"
-			/>
-			<div class="articles-header__back"></div>
-			<p class="articles-header__alt-img wremena wremena-b2">
-				«{{ picture.name }}»
-				<span class="articles-header__author-picture wremena wremena_secondary">
-					{{ picture.author }}
-				</span>
+	<div
+		class="articles__header-wrapper"
+		style="background-image: url({{ picture.src }})"
+	>
+		<div class="articles-header articles__header">
+			<ul class="articles__tags-list">
+				{% for tag in pageTags %}
+				<li class="articles__tags-item">
+					<a
+						href="/tag/{{ tag.link }}"
+						class="articles__tags-link grotesk grotesk-b2"
+					>
+						{{ tag.name }}
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+			<p class="articles-header__date grotesk grotesk-b2 grotesk_secondary">
+				{{ dates }}
 			</p>
+			<h1 class="articles-header__title wremena wremena-h1">{{ title }}</h1>
+
+			{% if subtitle %}
+			<p class="articles-header__subtitle grotesk grotesk-b2 grotesk_secondary">
+				{{ subtitle }}
+			</p>
+			{% endif %}
+
+			<p class="articles-header__author grotesk grotesk-b2">{{ author }}</p>
 		</div>
-		{% endif %}
 	</div>
+
+	{% if picture %}
+	<div class="articles-header__wrapper-img">
+		<p class="articles-header__alt-img wremena wremena-b2">
+			«{{ picture.name }}»
+			<span class="articles-header__author-picture wremena wremena_secondary">
+				{{ picture.author }}
+			</span>
+		</p>
+	</div>
+	{% endif %}
 
 	<div class="articles__content">
 		{{ content | safe }}

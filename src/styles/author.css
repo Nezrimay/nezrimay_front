@@ -1,6 +1,11 @@
 .author {
+	padding: 2rem;
 	&__info {
-		padding-top: 9rem;
+		padding-top: 4rem;
+	}
+
+	&__name {
+		width: max(320px, 50%);
 	}
 
 	&__city {
@@ -56,36 +61,11 @@
 	}
 }
 
-.works {
-	margin-top: 4rem;
+@media (min-width: 1024px) {
+	.author {
 
-	&__text {
-		/* text-align: end; */
-	}
-
-	&__list {
-		display: flex;
-		margin-top: 2rem;
-
-		list-style: none;
-
-		overflow: auto;
-
-		&::-webkit-scrollbar {
-			width: 0;
+		&__name {
+			font-size: 12rem;
 		}
-	}
-
-	&__item:not(:last-child) {
-		margin-right: 3rem;
-	}
-}
-
-.work {
-	text-decoration: none;
-
-	&__title {
-		margin-top: 2rem;
-		text-decoration: none;
 	}
 }
