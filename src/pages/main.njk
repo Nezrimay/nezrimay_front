@@ -47,18 +47,17 @@ layout: page.njk
 			{% for page in pages %}
 			<li class="last-pages__item">
 				<div class="pages">
-					<div class="pages__wrapper-img">
 						<img
 							class="pages__img pages__img_full"
 							src="{{ page.image }}"
 						/>
-						<div class="pages__back-img"></div>
+					<div class="pages__wrapper-text">
+						<div class="pages__tags">{{ page.tags }}</div>
+						<p class="pages__title grotesk grotesk-nav">{{ page.title }}</p>
+						<p class="pages__date grotesk grotesk_secondary grotesk-b2">
+							{{ page.date }}
+						</p>
 					</div>
-					<div class="pages__tags">{{ page.tags }}</div>
-					<p class="pages__title grotesk grotesk-nav">{{ page.title }}</p>
-					<p class="pages__date grotesk grotesk_secondary grotesk-b2">
-						{{ page.date }}
-					</p>
 				</div>
 			</li>
 			{%endfor%}
