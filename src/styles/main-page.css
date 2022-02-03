@@ -1,5 +1,4 @@
 .main-page {
-	padding: 0 2rem;
 }
 
 .best-pages {
@@ -26,7 +25,7 @@
 	}
 
 	&__link-wraper {
-		margin-top: 3rem;
+		margin: 3rem 2rem;
 
 		background-image: url('/images/arrow.svg');
 		background-position: 100%;
@@ -46,48 +45,71 @@
 }
 
 .last-pages {
-	margin-top: 4rem;
-	margin-bottom: 9rem;
 	&__title {
-		margin-bottom: 3rem;
+		padding: 2rem;
 	}
 
 	&__list {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
 		list-style: none;
 	}
 
 	&__item:not(:first-child) {
-		margin-top: 4rem;
+	}
+}
+
+@media (min-width: 640px) {
+	.last-pages__list {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 960px) {
+	.last-pages__list {
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
 .pages {
 	position: relative;
-	&__wrapper-img {
-		min-width: 31.25rem;
+	font-size: 0;
+
+	&__wrapper-text {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		padding: 2rem;
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba(0, 0, 0, 0.7);
 	}
 
 	&__img {
-		&_full {
-			width: calc(100% + 4rem);
-			aspect-ratio: 8 / 5;
-			margin-left: -2rem;
-		}
+		z-index: -2;
+		width: 100%;
+		aspect-ratio: 8 / 5;
+		object-fit: cover;
 	}
 
 	&__title {
-		margin-top: 2rem;
+		margin-top: auto;
+		color: var(--white-color);
 	}
 
 	&__date {
 		margin-top: 1rem;
+		color: var(--white-color);
 	}
 
 	&__tags {
-		position: absolute;
-		top: 2rem;
-		left: 2rem;
-
 		padding: 0.75rem 1rem 0.5rem;
 
 		font-style: normal;
@@ -104,9 +126,7 @@
 }
 
 .about {
-	width: calc(100% + 4rem);
 	padding: 6rem 2rem 9rem;
-	margin-left: -2rem;
 
 	background-color: var(--primary-color);
 	color: var(--white-color);

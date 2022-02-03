@@ -19,18 +19,14 @@ permalink: /tag/{{tag | slug}}/
 		<li class="last-pages__item">
 			<a href="{{ art.url }}">
 				<div class="pages">
-					<div class="pages__tags">{{ constant[tag] }}</div>
-					<div class="pages__wrapper-img">
-						<img
-							class="pages__img pages__img_full"
-							width="100%"
-							src="{{ art.url }}{{ art.data.picture.src }}"
-						/>
+					<img class="pages__img pages__img_full" src="{{ art.url }}{{ art.data.picture.src }}" />
+					<div class="pages__wrapper-text">
+						<div class="pages__tags">{{ constant[tag] }}</div>
+						<p class="pages__title grotesk grotesk-nav">{{ art.data.title }}</p>
+						<p class="pages__date grotesk grotesk_secondary grotesk-b2">
+							{{ art.date | transformDate }}
+						</p>
 					</div>
-					<p class="pages__title grotesk grotesk-nav">{{ art.data.title }}</p>
-					<p class="pages__date grotesk grotesk_secondary grotesk-b2">
-						{{ art.date | transformDate }}
-					</p>
 				</div>
 			</a>
 		</li>

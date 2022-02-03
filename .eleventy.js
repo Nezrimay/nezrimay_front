@@ -5,6 +5,7 @@ module.exports = function (config) {
 	config.addPassthroughCopy('src/fonts')
 	config.addPassthroughCopy('src/images')
 	config.addPassthroughCopy('src/articles/**/*.(jpg)')
+	config.addPassthroughCopy('src/authors/**/*.(jpg)')
 	config.addPassthroughCopy('src/scripts')
 
 	config.addPairedShortcode('markdown', (content) => {
