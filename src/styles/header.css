@@ -7,6 +7,11 @@
 	overflow: hidden;
 	transition: height 0.5s ease-in-out;
 
+	&__container {
+		width: 100%;
+		margin: auto;
+	}
+
 	&__wrapper {
 		width: 100%;
 		display: flex;
@@ -133,8 +138,6 @@
 		flex-direction: row;
 		justify-content: space-between;
 		padding: 0;
-		margin: 0 auto;
-		width: 1024px;
 		height: auto;
 
 		&__wrapper {
@@ -148,6 +151,11 @@
 		&__menu {
 			display: none;
 		}
+
+		&__container {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 
 	.navigation {
@@ -157,9 +165,9 @@
 		&__list {
 			display: flex;
 			padding: 2.5rem 3rem;
-			border: 2px solid var(--primary-color);
+			/* border: 2px solid var(--primary-color);
 			border-top: none;
-			border-bottom: none;
+			border-bottom: none; */
 		}
 
 		&__item:not(#id) {

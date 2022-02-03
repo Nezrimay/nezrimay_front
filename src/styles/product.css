@@ -1,7 +1,7 @@
 .product-page {
-  padding: var(--x2) 0 var(--x9);
+	padding: var(--x2) 0 var(--x9);
 	&__tags-list {
-    padding: 0 var(--x2) var(--x2);
+		padding: 0 var(--x2) var(--x2);
 		display: flex;
 		list-style: none;
 	}
@@ -29,5 +29,24 @@
 			padding-bottom: var(--x4);
 			border-bottom: 2px solid var(--primary-color);
 		}
+	}
+}
+
+.card {
+	&_full {
+		display: flex;
+		align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+	}
+
+	&__carousel_one {
+		width: max(480px, 50%);
+		margin: auto;
+	}
+
+	&__wrapper_one {
+		width: max(480px, 40%);
+		margin: auto;
 	}
 }

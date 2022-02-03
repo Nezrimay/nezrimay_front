@@ -121,7 +121,6 @@
 		align-self: flex-end;
 
 		&:nth-child(2n) {
-			text-align: end;
 			align-self: flex-start;
 		}
 	}
@@ -159,7 +158,7 @@
 		}
 	}
 
-	.poem div {
+	/* .poem div {
 		width: 100%;
 		align-self: flex-start;
 
@@ -167,18 +166,14 @@
 			text-align: start;
 			align-self: flex-start;
 		}
-	}
+	} */
 
 	.articles__content {
 		& p {
-			font-size: 3rem;
+			font-size: 2.5rem;
 		}
 		& h2 {
-			font-size: 7.25rem;
+			font-size: 5rem;
 		}
-	}
-
-	.article-title p {
-		font-size: 2rem;
 	}
 }
