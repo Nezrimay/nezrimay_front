@@ -6,7 +6,7 @@ title: 'Авторы'
 
 {% include 'header.njk' %}
 
-<main class="tag-page tag-page_not-padding">
+<main class="authors-page">
 	<h1 class="visually-hidden">Текста</h1>
 	{% for author in collections.author %}
 	<section class="tag-page__section">
@@ -22,16 +22,19 @@ title: 'Авторы'
 			<li class="best-pages__item">
 				<a href="{{ art.url }}">
 					<div class="pages">
-						<div class="pages__wrapper-img">
-							<img
-								class="pages__img"
-								style="width: 31.25rem; height: 31.25rem"
-								src="{{ art.url }}{{ art.data.picture.src }}"
-							/>
+						<img
+							class="pages__img"
+							style="width: 31.25rem; height: 31.25rem"
+							src="{{ art.url }}{{ art.data.picture.src }}"
+						/>
+						<div class="pages__wrapper-text">
+							<p class="pages__title grotesk grotesk-nav">
+								{{ art.data.title }}
+							</p>
+							<p class="pages__date grotesk grotesk_secondary grotesk-b2">
+								{{ art.date | transformDate }}
+							</p>
 						</div>
-						<p class="pages__title grotesk grotesk-nav">
-							{{ art.data.title }}
-						</p>
 					</div>
 				</a>
 			</li>
