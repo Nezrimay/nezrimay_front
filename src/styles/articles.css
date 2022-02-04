@@ -1,5 +1,4 @@
 .articles {
-	/* padding: 2rem; */
 	padding-bottom: 9rem;
 
 	&__tags-list {
@@ -32,7 +31,7 @@
 		margin-top: 4rem;
 		padding: 0 2rem;
 		& p {
-			font-family: 'Wremena';
+			font-family: var(--secondary-font);
 			font-style: normal;
 			font-weight: normal;
 			font-size: 2rem;
@@ -49,7 +48,7 @@
 			margin-top: 6rem;
 			margin-bottom: 3rem;
 
-			font-family: 'Wremena';
+			font-family: var(--secondary-font);
 			font-style: normal;
 			font-weight: bold;
 			font-size: 2.75rem;
@@ -104,12 +103,6 @@
 		margin-top: 2rem;
 		padding-left: 2rem;
 	}
-
-	&__img {
-	}
-
-	&__back {
-	}
 }
 
 .poem {
@@ -137,7 +130,7 @@
 .article-title {
 	width: max(320px, 50%);
 	p {
-		font-family: 'Neue Machina';
+		font-family: var(--primary-font);
 		font-style: normal;
 		font-weight: normal;
 		font-size: 2rem;
@@ -157,16 +150,6 @@
 			font-size: 7.25rem;
 		}
 	}
-
-	/* .poem div {
-		width: 100%;
-		align-self: flex-start;
-
-		&:nth-child(2n) {
-			text-align: start;
-			align-self: flex-start;
-		}
-	} */
 
 	.articles__content {
 		& p {

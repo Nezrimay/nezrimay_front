@@ -36,8 +36,8 @@
 	&_full {
 		display: flex;
 		align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	&__carousel_one {

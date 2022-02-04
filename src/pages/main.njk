@@ -19,7 +19,7 @@ layout: page.njk
 
 	<section class="last-pages">
 		<ul class="last-pages__list">
-			{% for page in collections.articles %}
+			{% for page in pages %}
 			<li class="last-pages__item">
 				<div class="pages">
 					<img class="pages__img pages__img_full" src="{{ page.image }}" />
@@ -35,7 +35,7 @@ layout: page.njk
 			{%endfor%}
 		</ul>
 		<div class="best-pages__link-wraper">
-			<a href="#" class="best-pages__link grotesk grotesk-b1">
+			<a href="/tags" class="best-pages__link grotesk grotesk-b1">
 				Остальные публикации
 			</a>
 		</div>
