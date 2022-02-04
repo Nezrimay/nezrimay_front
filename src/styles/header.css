@@ -20,13 +20,6 @@
 
 	&_open {
 		height: 100vh;
-		.header__logo {
-			display: none;
-		}
-		.search {
-			display: flex;
-		}
-
 		.menu-btn__line {
 			position: absolute;
 		}
@@ -41,7 +34,7 @@
 		}
 
 		.menu-btn {
-			margin-left: 0.9rem;
+			margin-left: auto;
 		}
 	}
 }
@@ -137,7 +130,7 @@
 	.header {
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 0;
+		padding: 0 8rem;
 		height: auto;
 
 		&__wrapper {
@@ -151,11 +144,6 @@
 		&__menu {
 			display: none;
 		}
-
-		&__container {
-			display: flex;
-			justify-content: space-between;
-		}
 	}
 
 	.navigation {
@@ -165,9 +153,6 @@
 		&__list {
 			display: flex;
 			padding: 2.5rem 3rem;
-			/* border: 2px solid var(--primary-color);
-			border-top: none;
-			border-bottom: none; */
 		}
 
 		&__item:not(#id) {

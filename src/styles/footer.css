@@ -9,7 +9,7 @@
 		
 		max-width: 1024px;
 		margin: 0 auto;
-		padding: var(--x4) var(--x2) var(--x4);
+		padding: var(--x4) var(--x2);
 	}
 }
 
@@ -62,5 +62,11 @@
 
 	&__item {
 		color: var(--primary-color);
+	}
+}
+
+@media (min-width: 1024px) {
+	.footer__wrapper {
+		padding: var(--x4) var(--x8);
 	}
 }
