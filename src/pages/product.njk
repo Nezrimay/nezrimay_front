@@ -1,18 +1,22 @@
 ---
+pagination:
+  data: test
+  size: 1
+  alias: product
 layout: page.njk
-permalink: /product/
+permalink: "/product/{{product.name | slug}}/"
 title: 'Товар'
 ---
 
 {% include 'header.njk' %}
 
 <main class="product-page">
-	<h1 class="visually-hidden">Карточка товара</h1>
+	<h1 class="visually-hidden">Карточка товара - {{product.name}}</h1>
 	<article class="card card_full">
 		<div class="card__carousel card__carousel_one">
 			<img
 				class="card__img"
-				src="../images/card.png"
+				src="{{product.image[0]}}"
 				alt="Тут должен быть крутой текст описывающий картину"
 				width="100%"
 			/>
@@ -50,23 +54,22 @@ title: 'Товар'
 			</ul>
 		</div>
 		<div class="card__wrapper card__wrapper_one">
-			<h2 class="card__header grotesk grotesk-h2">Картина маслом</h2>
-			<span class="card__price">1400 <span>₽</span></span>
-			<a class="card__link" href="/order/">Купить</a>
+			<h2 class="card__header grotesk grotesk-h2">{{product.name}}</h2>
+			<span class="card__price">{{product.price}} <span>₽</span></span>
+			<a class="card__link" href="/order/?id={{product.id}}">Купить</a>
 			<p class="card__description">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab corrupti
-				nesciunt? Consequatur voluptas dignissimos tempora, consequuntur
-				excepturi laborum qui accusantium similique itaque consectetur a eum?
-				Excepturi natus placeat odit!
+				{{product.description}}
 			</p>
 			<div class="card__details">
 				<h3 class="card__details-header">Детали</h3>
 				<ul class="card__details-list">
+					{%for details in product.tags%}
 					<li class="card__details-item">
-						<span class="card__details-item_left">Материал:</span>
-						<span class="card__details-item_right">Акрил, ткань, керамика</span>
+						<span class="card__details-item_left">{{details.tagKey}}:</span>
+						<span class="card__details-item_right">{{details.tagValue}}</span>
 					</li>
-					<li class="card__details-item">
+					{%endfor%}
+					<!-- <li class="card__details-item">
 						<span class="card__details-item_left">Размер:</span>
 						<span class="card__details-item_right">16 × 24 см</span>
 					</li>
@@ -77,7 +80,7 @@ title: 'Товар'
 					<li class="card__details-item">
 						<span class="card__details-item_left">Размер:</span>
 						<span class="card__details-item_right">16 × 24 см</span>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
