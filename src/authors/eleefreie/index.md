@@ -1,8 +1,8 @@
 ---
-pageTags: [{ name: 'Елена Биллер', link: '/authors/biller' }]
+pageTags: [{ name: 'Елена Eleefreie', link: '/authors/eleefreie' }]
 tags: 'author'
-id: 'biller'
-title: 'Елена Биллер'
+id: 'eleefreie'
+title: 'Елена Eleefreie'
 city: 'Симферополь'
 description: 'Студентка Института Медиакоммуникаций, Медиатехнологий и Дизайна по специальности графическое искусство и коммуникативный дизайн.'
 

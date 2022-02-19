@@ -10,8 +10,8 @@
     }
   ]
   tags: ['interview', 'golovnin', 'articles']
-  date: 2021-12-07
-  dates: '07.12.2021'
+  date: 2022-03-08
+  dates: '08.03.2022'
   title: 'Размышление о бумажной костюмерии'
   author: 'Руслан Головнин'
   picture: 

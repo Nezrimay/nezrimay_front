@@ -10,8 +10,8 @@
     }
   ]
   tags: ['poetry', 'golovnin', 'articles']
-  date: 2021-12-01
-  dates: '01.12.2021'
+  date: 2022-03-03
+  dates: '03.03.2022'
   title: 'Семиглазый гогерджин, или словно язык обретенный'
   author: 'Руслан Головнин'
   picture: 
