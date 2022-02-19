@@ -9,7 +9,7 @@ layout: page.njk
 <main class="order-page">
 	<h1 class="visually-hidden">Форма заказа</h1>
   <!-- На время отсутствия какого-либо бекенда метод get, только для того, чтобы потестировать страницу ответа -->
-	<form action="/response/" method="get"> 
+	<form class="form" action="/response/" method="get"> 
 		<fieldset class="order-page__fieldset">
 			<legend class="order-page__legend">Информация о заказе</legend>
 			<p class="order-page__wrapper">
@@ -30,6 +30,7 @@ layout: page.njk
 				<input class="order-page__input" type="text" name="Адрес" id="address" placeholder="Адрес" />
 				<label class="oreder-page__label visually-hidden" for="address">Адрес</label>
 			</p>
+			<input type="hidden" name="order_id" id="order_id" value="">
 			<button type="submit" class="order-page__submit">Купить</button>
 		</fieldset>
 	</form>
