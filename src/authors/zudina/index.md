@@ -5,6 +5,7 @@ id: 'zudina'
 title: 'Фаина Зудина'
 city: 'Севастополь'
 description: 'Студентка психологического факультета Таврической академии КФУ имени В.И. Вернадского и художница.'
+img: 'foto.jpg'
 
 socialList: [{ url: 'https://www.instagram.com/unoriginalbaby/', text: 'Инстаграм' }]
 
