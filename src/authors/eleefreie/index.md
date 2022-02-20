@@ -5,6 +5,7 @@ id: 'eleefreie'
 title: 'Елена Eleefreie'
 city: 'Симферополь'
 description: 'Студентка Института Медиакоммуникаций, Медиатехнологий и Дизайна по специальности графическое искусство и коммуникативный дизайн.'
+img: 'foto.jpg'
 
 socialList: [{ url: 'https://www.instagram.com/cex_x.x/', text: 'Инстаграм' }]
 
