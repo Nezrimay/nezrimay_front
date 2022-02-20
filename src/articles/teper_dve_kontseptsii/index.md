@@ -12,7 +12,7 @@
   tags: ['theory', 'mizin']
   date: 2022-03-31
   dates: '31.03.2022'
-  title: 'История одного перевода'
+  title: 'Теперь две концепции'
   author: 'Павел Мизин'
   picture: 
     src: 'foto.jpg'
