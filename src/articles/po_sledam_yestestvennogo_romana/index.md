@@ -1,15 +1,15 @@
 ---
   pageTags: [
     {
-      name: 'Теория',
-      link: 'theory',
+      name: 'Проза',
+      link: 'prose',
     }, 
     {
       name: 'Руслан Головнин',
       link: '/authors/golovnin',
     }
   ]
-  tags: ['theory', 'golovnin', 'articles']
+  tags: ['prose', 'golovnin', 'articles']
   date: 2022-03-17
   dates: '17.03.2022'
   title: 'По следам "Естественного романа"'
