@@ -10,9 +10,9 @@
     }
   ]
   tags: ['theory', 'litvinenko', 'articles']
-  date: 2021-12-09
-  dates: '09.12.2021'
-  title: 'Заметки о кибертексте. Видеоигры'
+  date: 2022-03-24
+  dates: '24.03.2022'
+  title: 'Заметки о '
   author: 'Дмитрий Литвиненко'
   picture: 
     src: 'foto.jpg'
