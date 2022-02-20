@@ -5,6 +5,7 @@ id: 'golovnin'
 title: 'Руслан Головнин'
 city: 'Симферополь'
 description: 'Главный редактор.'
+img: 'foto.jpg'
 
 socialList: [{ url: 'https://www.instagram.com/golo_khovorskiy/', text: 'Инстаграм' }]
 
