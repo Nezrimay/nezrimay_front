@@ -23,4 +23,4 @@ layout: author.njk
 
 Товары:
 
-[![asdaw](/images/card.png)](/products)
+[![asdaw](/images/card.png)](/product)
